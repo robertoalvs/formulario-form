@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário livro</title>
+    <link rel="stylesheet" href="../formulario-form/estilos/style.css">
+</head>
+<body>
+
+    <div id="formulario">
+
+        <form action="../formulario-form/emailform.php" method="post" enctype="multipart/form-data">
+    
+                <fieldset>
+
+                    <h2>ACCOUNT</h2>
+
+                    <div class="nome">
+
+                        <label for="text">Primeiro Nome:</label>
+                        <input type="text" name="texto" id="text" required maxlength="15">
+
+                        <br>
+
+                        <label for="sobre">SobreNome:</label>
+                        <input type="text" name="sobrenome" id="sobre" required maxlength="20">
+
+                        <br>
+
+                        <label for="mail">Email:</label>
+                        <input type="email" name="email" id="mail" required maxlength="50">
+
+                        <br>
+
+                        <label for="pass">Senha:</label>
+                        <input type="password" name="password" id="pass" minlength="8" required>
+
+                        <br>
+
+                        <label for="repass">Repetir a Senha:</label>
+                        <input type="password" name="password1" id="repass" required minlength="8">
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="address">
+
+                    <h2>ADDRESS</h2>
+
+                    <div class="nome sobrenome ">
+
+                        <label for="end">Endereço:</label>
+                        <input type="text" name="endereco" id="end" required max="40">
+
+                        <br>
+
+                        <label for="city">Cidate:</label>
+                        <input type="text" name="cidade" id="city" required max="20">
+
+                        <br>
+
+                        <label for="idselecao">Estado:</label required>
+                        <select class="select" name="selecao" id="idselecao">
+
+                            <optgroup label="Sudeste">
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="MG">Minas Gerais</option>
+                            </optgroup>
+
+                            <optgroup label="Sul">
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="SC">Santa Catarina</option>
+                            </optgroup>
+
+                        </select>
+
+                        <br>
+
+                        <div class="zip">
+                            <label for="izip">Cep:</label>
+                            <input class="cep" type="text" name="zip" id="izip" required maxlength="10" placeholder="Digite seu cep">
+                        </div>
+
+                    </div>
+                    
+                </fieldset>
+            
+                <fieldset id="profile">
+
+                    <h2>PUBLIC PROFILE</h2>
+                    
+                    <div class="nome file">
+
+                        <label for="ipic">Carregar Foto:</label>
+                        <input type="file" name="picture" id="ipic" required>
+
+                        <p class="profile-paragrafo">Tamanho Máximo de 700k. JPG, GIF, PNG.</p>
+
+                        <label for="iuser">User Name:</label>
+                        <input type="text" name="user" id="iuser" required>
+
+                        <label for="iweb">Web:</label>
+                        <input type="url" name="web" id="iweb">
+
+                        <p class="profile-paragrafo">Se você tiver um site ou um blog, digite aqui.</p>
+                                              
+                        <label class="text-label" for="icaixa-texto">Bio:</label>
+                        <textarea name="caixa-texto" id="icaixa-texto" cols="30" rows="10" maxlength="1000"  required></textarea>
+                        
+                        
+
+                        <div class="radio">
+
+                            <label>Sexo:</label>
+
+                            <input class="input-gen" type="radio" name="gen" id="igen-masculino" value="homem" required>
+                            
+                            <label class="label-radio" for="igen-masculino">Masculino</label>
+
+                            <input class="input-gen" type="radio" name="gen" id="igen-feminino" value="feminino" required>
+
+                            <label class="label-radio" for="igen-feminino">Feminino</label>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="check-set">
+
+                    <h2>EMAILS</h2>
+
+                    <div class="nome check-box">
+                        
+                        
+                        <input class="input-check" type="checkbox" name="check" id="icheck" value="icheck">
+            
+                        <label class="label-check" for="icheck">
+                            Enviar um e-mail com mensagens de outros usuários.</label>
+
+                        <br>
+
+                        <input class="input-check" type="checkbox" name="check1" id="icheck1" value="icheck1">
+                        
+                        <label class="label-check" for="icheck1">Enviar um e-mail com promoções ocasionais sobre nossos outros produtos.</label>
+
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="criar">
+                    <input class="botao" type="submit" value="CRIAR CONTA">
+                </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>
